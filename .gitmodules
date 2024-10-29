@@ -1,0 +1,3 @@
+[submodule "deps/prover"]
+	path = deps/prover
+	url = git@github.com:alexmikhalevich/risc0-verify-steps.git
