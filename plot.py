@@ -38,10 +38,12 @@ if __name__ == "__main__":
     benchmark_name = sys.argv[1]
 
     data = []
-    cycles = cartesi_count_cycles(benchmark_name)
-    max_step = min(10000000, cycles)
-    print(f"Total cartesi cycles: {cycles}, capping step length at {max_step} cycles.")
-    for step in range(50000, max_step, 50000):
+    #cycles = cartesi_count_cycles(benchmark_name)
+    max_step = 160000
+    min_step = 50000
+    step_increment = 10000
+    #print(f"Total cartesi cycles: {cycles}, capping step length at {max_step} cycles.")
+    for step in range(min_step, max_step, step_increment):
         execute_benchmark(benchmark_name, step)
         data.append(read_results())
 
