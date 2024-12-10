@@ -35,11 +35,11 @@ def read_results():
         print("Error decoding JSON from result.json.")
 
 if __name__ == "__main__":
-    benchmark_name = sys.argv[1]
+    max_step = int(sys.argv[1])
+    benchmark_name = sys.argv[2]
 
     data = []
     #cycles = cartesi_count_cycles(benchmark_name)
-    max_step = 160000
     min_step = 50000
     step_increment = 10000
     #print(f"Total cartesi cycles: {cycles}, capping step length at {max_step} cycles.")

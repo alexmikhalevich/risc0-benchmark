@@ -33,7 +33,7 @@ def clean_log(file_path):
 
 if __name__ == "__main__":
     max_step_length = int(sys.argv[1])
-    payload = "archive"
+    payload = sys.argv[2]
     data = []
     for step_length in range(50000, max_step_length, 10000):
         print(f"Calculating step length: {step_length}")

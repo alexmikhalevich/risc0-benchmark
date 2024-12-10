@@ -4,10 +4,11 @@ VERIFY_LOG_PATH ?= $(CURDIR)/log.bin
 CARTESI_ROOTFS_PATH ?= rootfs.ext2
 
 MACHINE_LOG = .machine.log
+ACCESS_LOG = .access.log
 PROVER_LOG = deps/prover/.prover.log
 PROVER_ENV = deps/prover/.env
 
-MAX_MCYCLE = 42000000
+MAX_MCYCLE = 60000000
 
 all:
 	@rm -f $(PROVER_ENV)
@@ -36,7 +37,7 @@ cartesi-log:
 		--flash-drive=label:payload,filename:payload/payload.ext2 \
 		--max-mcycle=$(MAX_MCYCLE) \
 		--log-step=$(VERIFY_STEP_LENGTH_CYCLES),$(VERIFY_LOG_PATH) \
-		-- "cd /mnt/payload/opt/payload/ && ./$(PAYLOAD)" 2>$(MACHINE_LOG)
+		-- "cd /mnt/payload/opt/payload/ && ./$(PAYLOAD)" 2>$(MACHINE_LOG) 1>$(ACCESS_LOG)
 	@START_HASH=$$(grep "^$(MAX_MCYCLE):" $(MACHINE_LOG) | awk -F ': ' '{print $$2}'); \
 	SUM=$$(echo $$(($(MAX_MCYCLE) + $(VERIFY_STEP_LENGTH_CYCLES)))); \
 	END_HASH=$$(grep "^$${SUM}:" $(MACHINE_LOG) | awk -F ': ' '{print $$2}'); \
@@ -67,6 +68,9 @@ list:
 	@echo "Available benchmark payloads:"
 	@echo "  - sort: quicksort implementation (100k numbers)"
 	@echo "  - archive: gzip a 50M file"
+	@echo "  - stress-loop: a stress-ng loop benchmark"
+	@echo "  - stress-int64: a stress-ng int64 benchmark"
+	@echo "  - stress-fp: a stress-ng fp benchmark"
 
 clean:
 	@make -C payload clean

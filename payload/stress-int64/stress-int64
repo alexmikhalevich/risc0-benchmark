@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/payload/usr/lib/riscv64-linux-gnu/ /mnt/payload/bin/stress-ng --no-rand-seed --cpu 1 --cpu-method int64 --cpu-ops 400

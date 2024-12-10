@@ -1,0 +1,4 @@
+#/bin/sh
+
+tar cf ~/blob.tar.gz blob --gzip
+sha256sum ~/blob.tar.gz &> /dev/null
