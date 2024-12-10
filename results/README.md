@@ -24,101 +24,106 @@ We evaluated the following payloads:
 
 ### Sort
 
-> Hashing is enabled on the left and disabled on the right.
+**risc0 metrics**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
 
 <p align="center">
   <img src="sort_combined.png" alt="Sort: hashing enabled" width="45%">
   <img src="sort_nohash.png" alt="Sort: hashing disabled" width="45%">
 </p>
 
+**Cartesi metrics**
+
 <p align="center">
   <img src="sort_pages_combined.png" alt="Sort: hashing enabled" width="45%">
-  <img src="sort_pages_nohash.png" alt="Sort: hashing disabled" width="45%">
+  <img src="sort_touches_combined.png" alt="Sort: hashing enabled" width="45%">
 </p>
 
-**Memory touches, with hashing enabled**
-
-<img src="sort_touches_combined.png" alt="Sort: hashing enabled">
 <img src="sort_memory_combined.png" alt="Sort: hashing enabled">
 <img src="sort_tlb_combined.png" alt="Sort: hashing enabled">
 
 ### Archive
 
-> Hashing is enabled on the left and disabled on the right.
+**risc0 metrics**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
 
 <p align="center">
   <img src="archive_combined.png" alt="Archive: hashing enabled" width="45%">
   <img src="archive_nohash.png" alt="Archive: hashing disabled" width="45%">
 </p>
 
+**Cartesi metrics**
+
 <p align="center">
   <img src="archive_pages_combined.png" alt="Archive: hashing enabled" width="45%">
-  <img src="archive_pages_nohash.png" alt="Archive: hashing disabled" width="45%">
+  <img src="archive_touches_combined.png" alt="Archive: hashing enabled" width="45%">
 </p>
 
-**Memory touches, with hashing enabled**
-
-<img src="archive_touches_combined.png" alt="Archive: hashing enabled">
 <img src="archive_memory_combined.png" alt="Archive: hashing enabled">
 <img src="archive_tlb_combined.png" alt="Archive: hashing enabled">
 
 ### stress-loop
 
-> Hashing is enabled on the left and disabled on the right.
+**risc0 metrics**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
 
 <p align="center">
   <img src="stress_loop_combined.png" alt="stress-loop: hashing enabled" width="45%">
   <img src="stress_loop_nohash.png" alt="stress-loop: hashing disabled" width="45%">
 </p>
 
+**Cartesi metrics**
+
 <p align="center">
   <img src="stress_loop_pages_combined.png" alt="stress-loop: hashing enabled" width="45%">
-  <img src="stress_loop_pages_nohash.png" alt="stress-loop: hashing disabled" width="45%">
+  <img src="stress_loop_touches_combined.png" alt="stress-loop: hashing enabled" width="45%">
 </p>
 
-**Memory touches, with hashing enabled**
-
-<img src="stress_loop_touches_combined.png" alt="stress-loop: hashing enabled">
 <img src="stress_loop_memory_combined.png" alt="stress-loop: hashing enabled">
 <img src="stress_loop_tlb_combined.png" alt="stress-loop: hashing enabled">
 
 ### stress-int64
 
-> Hashing is enabled on the left and disabled on the right.
+**risc0 metrics**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
 
 <p align="center">
   <img src="stress_int64_combined.png" alt="stress-int64: hashing enabled" width="45%">
   <img src="stress_int64_nohash.png" alt="stress-int64: hashing disabled" width="45%">
 </p>
 
+**Cartesi metrics**
+
 <p align="center">
   <img src="stress_int64_pages_combined.png" alt="stress-int64: hashing enabled" width="45%">
-  <img src="stress_int64_pages_nohash.png" alt="stress-int64: hashing disabled" width="45%">
+  <img src="stress_int64_touches_combined.png" alt="stress-int64: hashing enabled" width="45%">
 </p>
 
-**Memory touches, with hashing enabled**
-
-<img src="stress_int64_touches_combined.png" alt="stress-int64: hashing enabled">
 <img src="stress_int64_memory_combined.png" alt="stress-int64: hashing enabled">
 <img src="stress_int64_tlb_combined.png" alt="stress-int64: hashing enabled">
 
 ### stress-fp
 
-> Hashing is enabled on the left and disabled on the right.
+**risc0 metrics**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
 
 <p align="center">
   <img src="stress_fp_combined.png" alt="stress-fp: hashing enabled" width="45%">
   <img src="stress_fp_nohash.png" alt="stress-fp: hashing disabled" width="45%">
 </p>
 
+**Cartesi metrics**
+
 <p align="center">
   <img src="stress_fp_pages_combined.png" alt="stress-fp: hashing enabled" width="45%">
-  <img src="stress_fp_pages_nohash.png" alt="stress-fp: hashing disabled" width="45%">
+  <img src="stress_fp_touches_combined.png" alt="stress-fp: hashing enabled" width="45%">
 </p>
 
-**Memory touches, with hashing enabled**
-
-<img src="stress_fp_touches_combined.png" alt="stress-fp: hashing enabled">
 <img src="stress_fp_memory_combined.png" alt="stress-fp: hashing enabled">
 <img src="stress_fp_tlb_combined.png" alt="stress-fp: hashing enabled">
 
