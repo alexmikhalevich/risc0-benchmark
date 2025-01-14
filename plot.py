@@ -27,7 +27,11 @@ def read_results():
     """Reads the results from result.json and prints them."""
     try:
         with open('result.json', 'r') as f:
-            results = json.load(f)
+            raw_data = f.read()
+        if "user_cycles" in raw_data:
+            import re
+            raw_data = re.sub(r'"user_cycles":\s*(\d+)\s*\(.*?\)', r'"user_cycles": \1', raw_data)
+        results = json.loads(raw_data)
         return results
     except FileNotFoundError:
         print("result.json not found.")
@@ -47,6 +51,7 @@ if __name__ == "__main__":
         execute_benchmark(benchmark_name, step)
         data.append(read_results())
 
+    print(data)
     execution_times = [float(d['execution_time'][:-1]) for d in data]
     num_segments = [d['number_of_segments'] for d in data]
     total_cycles = [d['total_cycles'] for d in data]
