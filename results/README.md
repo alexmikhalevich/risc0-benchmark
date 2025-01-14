@@ -33,6 +33,16 @@ We evaluated the following payloads:
   <img src="sort_nohash.png" alt="Sort: hashing disabled" width="45%">
 </p>
 
+**risc0 metrics, precompiled hash (SHA2)**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
+
+<p align="center">
+  <img src="sort_combined_precompiled.png" alt="Sort: hashing enabled" width="45%">
+  <img src="sort_nohash.png" alt="Sort: hashing disabled" width="45%">
+</p>
+
+
 **Cartesi metrics**
 
 <p align="center">
@@ -57,6 +67,15 @@ We evaluated the following payloads:
 
 <p align="center">
   <img src="archive_combined.png" alt="Archive: hashing enabled" width="45%">
+  <img src="archive_nohash.png" alt="Archive: hashing disabled" width="45%">
+</p>
+
+**risc0 metrics, precompiled hash (SHA2)**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
+
+<p align="center">
+  <img src="archive_combined_precompiled.png" alt="Archive: hashing enabled" width="45%">
   <img src="archive_nohash.png" alt="Archive: hashing disabled" width="45%">
 </p>
 
@@ -87,6 +106,15 @@ We evaluated the following payloads:
   <img src="stress_loop_nohash.png" alt="stress-loop: hashing disabled" width="45%">
 </p>
 
+**risc0 metrics, precompiled hash (SHA2)**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
+
+<p align="center">
+  <img src="stress_loop_combined_precompiled.png" alt="stress-loop: hashing enabled" width="45%">
+  <img src="stress_loop_nohash.png" alt="stress-loop: hashing disabled" width="45%">
+</p>
+
 **Cartesi metrics**
 
 <p align="center">
@@ -111,6 +139,15 @@ We evaluated the following payloads:
 
 <p align="center">
   <img src="stress_int64_combined.png" alt="stress-int64: hashing enabled" width="45%">
+  <img src="stress_int64_nohash.png" alt="stress-int64: hashing disabled" width="45%">
+</p>
+
+**risc0 metrics, precompiled hash (SHA2)**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
+
+<p align="center">
+  <img src="stress_int64_combined_precompiled.png" alt="stress-int64: hashing enabled" width="45%">
   <img src="stress_int64_nohash.png" alt="stress-int64: hashing disabled" width="45%">
 </p>
 
@@ -141,6 +178,15 @@ We evaluated the following payloads:
   <img src="stress_fp_nohash.png" alt="stress-fp: hashing disabled" width="45%">
 </p>
 
+**risc0 metrics, precompiled hash (SHA2)**
+
+> Cartesi machine hashing is enabled on the left and disabled on the right.
+
+<p align="center">
+  <img src="stress_fp_combined_precompiled.png" alt="stress-fp: hashing enabled" width="45%">
+  <img src="stress_fp_nohash.png" alt="stress-fp: hashing disabled" width="45%">
+</p>
+
 **Cartesi metrics**
 
 <p align="center">
@@ -168,6 +214,14 @@ We evaluated the following payloads:
 </details>
 
 <details>
+  <summary>`sort` with hashing (precompiled), mertrics</summary>
+  Execution Times: [4.687593417, 5.288630958, 5.659733625, 6.1570415, 6.678371792, 7.332536041, 7.764924, 8.401712, 8.797254958, 9.363901334, 9.966878542]
+  Number of Segments: [199, 224, 249, 273, 298, 323, 348, 373, 398, 422, 447]
+  Total Cycles: [208142336, 234356736, 260308992, 286261248, 312475648, 338690048, 364380160, 390594560, 416415744, 442499072, 468713472]
+  User Cycles: [189134323, 212705213, 236477101, 260119455, 283539105, 306937641, 330512367, 353834462, 377265740, 400904265, 424340936]
+</details>
+
+<details>
   <summary>`sort` with hashing, pages</summary>
   [(50000, 77), (60000, 77), (70000, 77), (80000, 77), (90000, 77), (100000, 77), (110000, 77), (120000, 77), (130000, 77), (140000, 77), (150000, 77)]
 </details>
@@ -183,6 +237,14 @@ We evaluated the following payloads:
   Number of Segments: [1368, 1394, 1432, 1458, 1483, 1508, 1533, 1570, 1613, 1638, 1663]
   Total Cycles: [1434451968, 1460928512, 1501560832, 1528299520, 1554513920, 1581252608, 1607467008, 1646264320, 1690566656, 1716781056, 1743781888]
   User Cycles: [1356288424, 1380402286, 1417727682, 1441735190, 1465304163, 1489080960, 1512878678, 1548992276, 1588665658, 1612243220, 1636288957]
+</details>
+
+<details>
+  <summary>`archive` with hashing (precompiled), metrics</summary>
+  Execution Times: [4.87699675, 5.69764475, 6.057803, 6.56093175, 7.115237125, 7.638978291, 8.117960708, 8.521466291, 9.180443916, 11.114377292, 11.007183583]
+  Number of Segments: [210, 236, 261, 287, 312, 337, 362, 386, 415, 440, 466]
+  Total Cycles: [220200960, 246677504, 273678336, 300154880, 326369280, 352845824, 379584512, 404750336, 435159040, 461373440, 488112128]
+  User Cycles: [198686013, 222530671, 246508444, 270246788, 293545083, 317051857, 340579753, 363496680, 389874280, 413181165, 436957741]
 </details>
 
 <details>
@@ -204,6 +266,14 @@ We evaluated the following payloads:
 </details>
 
 <details>
+  <summary> `stress-loop` with hashing (precompiled), metrics</summary>
+  Execution Times: [8.486942708, 9.675255333, 10.542885833, 13.025686541, 14.6224245, 15.4257435, 16.51911125, 17.06622275, 18.215802833, 19.073012875, 19.845554791]
+  Number of Segments: [361, 411, 456, 579, 650, 696, 741, 779, 835, 877, 922]
+  Total Cycles: [378535936, 430440448, 477626368, 606339072, 681574400, 729022464, 776208384, 816840704, 875560960, 919076864, 966787072]
+  User Cycles: [336303987, 382520939, 424451593, 527606822, 591359933, 630017114, 667400391, 702923321, 751457553, 786344973, 825868781]
+</details>
+
+<details>
   <summary>`stress-loop` with hashing, pages</summary>
   [(50000, 200), (60000, 215), (70000, 226), (80000, 273), (90000, 303), (100000, 308), (110000, 312), (120000, 317), (130000, 322), (140000, 325), (150000, 331)]
 </details>
@@ -219,6 +289,14 @@ We evaluated the following payloads:
   Number of Segments: [2987, 3218, 3394, 4160, 4624, 4735, 4833, 4937, 5057, 5137, 5247]
   Total Cycles: [3132096512, 3374317568, 3558866944, 4362076160, 4848615424, 4965007360, 5066981376, 5176033280, 5302124544, 5386534912, 5501878272]
   User Cycles: [2959547330, 3186696333, 3358849830, 4102580526, 4557653509, 4661842940, 4751352431, 4851953257, 4965584253, 5039715298, 5143343987]
+</details>
+
+<details>
+  <summary>`stress-int64` with hashing (precompiled), metrics</summary>
+  Execution Times: [8.580115375, 9.563730084, 10.58655925, 12.997888792, 14.505975833, 15.43098525, 16.515428166, 17.186900084, 18.173005167, 18.953817709, 19.870356791]
+  Number of Segments: [361, 410, 456, 579, 650, 696, 741, 780, 835, 877, 921]
+  Total Cycles: [378535936, 429391872, 477364224, 606339072, 681050112, 729284608, 776470528, 817102848, 875560960, 919076864, 965738496]
+  User Cycles: [336180015, 381547281, 423772649, 527633888, 591252560, 630044032, 667432792, 702940127, 751477967, 786361170, 824896329]
 </details>
 
 <details>
@@ -239,6 +317,14 @@ lace tlb': 1287})), (110000, Counter({'touch_page': 533422, 'read shadow': 16256
   Number of Segments: [2987, 3232, 3477, 4160, 4624, 4735, 4832, 4936, 5071, 5153, 5261]
   Total Cycles: [3132096512, 3388997632, 3645374464, 4362076160, 4848615424, 4965007360, 5066719232, 5175771136, 5316411392, 5402787840, 5516558336]
   User Cycles: [2959832749, 3200804513, 3441597326, 4102573980, 4557882755, 4661785317, 4751306776, 4851921152, 4979389220, 5054503219, 5157426314]
+</details>
+
+<details>
+  <summary>`stress-fp` with hashing (precompiled), metrics</summary>
+  Execution Times: [8.475657541, 10.064103167, 10.712215917, 13.091183709, 14.925844833, 15.634246917, 16.668791667, 17.118019, 18.391694375, 20.625816375, 20.225114834]
+  Number of Segments: [362, 411, 460, 579, 650, 696, 741, 780, 837, 879, 922]
+  Total Cycles: [378601472, 430964736, 481820672, 606339072, 681574400, 729022464, 776470528, 816971776, 876871680, 921698304, 966787072]
+  User Cycles: [336465632, 382679170, 428160055, 527631075, 591482394, 629985577, 667386772, 702907860, 752356817, 788173298, 826053387]
 </details>
 
 <details>
